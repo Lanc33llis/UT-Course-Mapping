@@ -22,7 +22,7 @@ Mac & Linux
 # make a new virtual environment 
 python3 -m venv venv
 # activate the virtual environment
-source python3-virtualenv/bin/activate
+source venv/bin/activate
 # install the dependencies
 pip3 install -r requirements.txt
 # run the bot

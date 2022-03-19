@@ -11,7 +11,9 @@ python -m venv venv
 # install the dependencies
 pip install -r requirements.txt
 # run the bot
-python scraper.py eid password
+python scraper.py -e eid -p password
+# caches eid and password so that you may run the bot again without having to enter them
+python scraper.py
 ```
 
 Mac & Linux

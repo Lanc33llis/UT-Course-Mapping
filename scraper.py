@@ -7,6 +7,7 @@ from selenium.webdriver.common.keys import Keys
 import argparse, json
 
 from utils.courseParser import courseParser
+from utils.scraperFunctions import exportMajors
 
 with open("cache.txt", "r") as cache:
   cache = cache.read().splitlines()
@@ -88,6 +89,7 @@ def recursiveFollow(driver, timeout, tree):
   except Exception as e:
     pass
 
+# exportMajors(list(map(lambda e: e.text, majors)), "majors.txt")
 for major in majors:  
   majorName = major.text
   print(majorName)
